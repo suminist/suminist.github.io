@@ -4,25 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audio Streaming Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #4a4e69;
+        }
+
+        .section {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #9a8c98;
+            font-size: 1.5em;
+            margin-top: 0;
+        }
+
+        .audio-control {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        audio {
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <h1>Audio Stream</h1>
-    
-    <div>
-        <h2>Track 1</h2>
-        <audio controls>
-            <source src="audio/track1.flac" type="audio/flac">
-            Your browser does not support the audio element.
-        </audio>
+
+    <div class="section">
+        <h2>Easy</h2>
+        <div class="audio-control">
+            <audio controls>
+                <source src="audio/easy1.flac" type="audio/flac">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="audio-control">
+            <audio controls>
+                <source src="audio/easy2.flac" type="audio/flac">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="audio-control">
+            <audio controls>
+                <source src="audio/easy3.flac" type="audio/flac">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="audio-control">
+            <audio controls>
+                <source src="audio/easy4.flac" type="audio/flac">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="audio-control">
+            <audio controls>
+                <source src="audio/easy5.flac" type="audio/flac">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
     </div>
 
-    <div>
-        <h2>Track 2</h2>
-        <audio controls>
-            <source src="audio/track2.flac" type="audio/flac">
-            Your browser does not support the audio element.
-        </audio>
+    <div class="section">
+        <h2>Medium</h2>
+        <!-- Repeat the structure for each audio track -->
+        <div class="audio-control">
+            <audio controls>
+                <source src="audio/medium1.flac" type="audio/flac">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <!-- Add remaining 4 audio elements here -->
     </div>
 
+    <div class="section">
+        <h2>Hard</h2>
+        <!-- Repeat the structure for each audio track -->
+        <div class="audio-control">
+            <audio controls>
+                <source src="audio/hard1.flac" type="audio/flac">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <!-- Add remaining 4 audio elements here -->
+    </div>
+
+    <div class="section">
+        <h2>Impossible</h2>
+        <!-- Repeat the structure for each audio track -->
+        <div class="audio-control">
+            <audio controls>
+                <source src="audio/impossible1.flac" type="audio/flac">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <!-- Add remaining 4 audio elements here -->
+    </div>
 </body>
 </html>
